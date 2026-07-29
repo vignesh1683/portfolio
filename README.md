@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Srivignesh M — Portfolio
+
+A futuristic, highly interactive personal portfolio built with **Next.js 16**, **React 19**, **Three.js**, and **Framer Motion**. Features a 3D particle background, custom cursor, smooth scroll animations, and a fully responsive layout.
+
+**Live:** [srivignesh.dev](https://srivignesh-dev.vercel.app/) &nbsp;|&nbsp; **LinkedIn:** [linkedin.com/in/srivignesh-m](https://www.linkedin.com/in/srivignesh-m/) &nbsp;|&nbsp; **GitHub:** [github.com/vignesh1683](https://github.com/vignesh1683)
+
+---
+
+## Features
+
+- **3D Particle Background** — dual-layer starfield (cyan stars + purple nebula dust) with mouse parallax via `@react-three/fiber`
+- **Custom Cursor** — magnetic dot + ring that reacts to hover and click states
+- **Typewriter Hero** — cycles through 5 role titles with realistic typing and deleting
+- **Tabbed Skills** — animated skill bars across 6 categories with a full tag cloud
+- **Experience Timeline** — accordion cards with impact metrics and expandable achievements
+- **Projects Showcase** — featured project (two-column layout) + card grid for others
+- **Education & Certs** — animated CGPA progress bar and certification grid
+- **Contact Section** — uniform card grid with a terminal-style footer
+- **Responsive NavBar** — sticky with animated active indicator and mobile hamburger menu
+
+---
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Framework | Next.js 16.2 (App Router, Turbopack) |
+| UI | React 19, Tailwind CSS v4 |
+| Animation | Framer Motion 12 |
+| 3D | Three.js, @react-three/fiber, @react-three/drei |
+| Icons | lucide-react |
+| Fonts | Space Grotesk, JetBrains Mono (Google Fonts) |
+| Language | TypeScript 5 |
+
+---
+
+## Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── globals.css          # Global styles, CSS variables, utility classes
+│   ├── layout.tsx           # Root layout, fonts, SEO metadata
+│   └── page.tsx             # Main page — composes all sections
+├── components/
+│   ├── ParticleBackground.tsx  # Three.js 3D starfield canvas
+│   ├── CustomCursor.tsx        # Magnetic cursor overlay
+│   ├── NavBar.tsx              # Sticky responsive navigation
+│   ├── HeroSection.tsx         # Typewriter, stats, CTAs
+│   ├── SkillsSection.tsx       # Tabbed skills with progress bars
+│   ├── ExperienceSection.tsx   # Accordion work timeline
+│   ├── ProjectsSection.tsx     # Featured + grid projects
+│   ├── EducationSection.tsx    # Degree + certifications
+│   └── ContactSection.tsx      # Contact cards + terminal footer
+└── public/                  # Static assets
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repo
+git clone https://github.com/vignesh1683/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All content is co-located with its component — no external CMS or config file needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| What to change | Where |
+|---|---|
+| Name, roles, tagline, stats | `components/HeroSection.tsx` |
+| Skills and proficiency levels | `components/SkillsSection.tsx` |
+| Work experience and achievements | `components/ExperienceSection.tsx` |
+| Projects (title, links, stack) | `components/ProjectsSection.tsx` |
+| Education and certifications | `components/EducationSection.tsx` |
+| Contact links | `components/ContactSection.tsx` |
+| Colors, fonts, CSS utilities | `app/globals.css` |
+| SEO metadata | `app/layout.tsx` |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT © 2024 Srivignesh M
