@@ -6,43 +6,63 @@ import { Briefcase, Calendar, MapPin, ChevronRight, Zap } from "lucide-react";
 
 const experiences = [
   {
+    role: "System Engineer",
+    company: "Tata Consultancy Services (TCS)",
+    period: "July 2026 – Present",
+    location: "Chennai, India",
+    type: "Full-time",
+    achievements: [
+      {
+        icon: "🧠",
+        text: "Implemented Artificial Intelligence and Machine Learning models utilizing Python and Deep Learning frameworks.",
+      },
+      {
+        icon: "🤖",
+        text: "Engineered solutions applying Gen AI, Large Language Models, Retrieval-Augmented Generation, and Agentic AI.",
+      },
+      {
+        icon: "📈",
+        text: "Designed data preprocessing pipelines and conducted rigorous model evaluation to optimize AI-driven system architectures.",
+      },
+    ],
+    metrics: [
+      { label: "Core Domain", value: "GenAI & LLMs" },
+      { label: "Architecture", value: "Agentic AI" },
+      { label: "Retrieval", value: "RAG Systems" },
+      { label: "Frameworks", value: "Deep Learning" },
+    ],
+    stack: ["Python", "Deep Learning", "Generative AI", "LLMs", "RAG", "Agentic AI", "Data Pipelines", "Model Evaluation"],
+  },
+  {
     role: "Solution Engineer 1",
     company: "Whirldata Inc",
-    period: "Feb 2024 – May 2026",
+    period: "Dec 2024 – May 2026",
     location: "Chennai, India",
     type: "Full-time",
     achievements: [
       {
         icon: "🔄",
-        text: "Led end-to-end migration of legacy monolithic PHP applications to a highly concurrent microservices architecture using React and FastAPI — zero downtime, seamless feature delivery.",
+        text: "Led the end-to-end migration of legacy monolithic PHP applications to a highly concurrent microservices architecture using React and FastAPI, coordinating with engineering teams to ensure zero downtime.",
       },
       {
         icon: "⚡",
-        text: "Architected responsive React and Redux analytics dashboards, reducing UI load times by 30% while migrating to cost-effective open-source component libraries.",
+        text: "Architected responsive React and Redux analytics dashboards, reducing UI load times by 30% while successfully migrating to cost-effective open-source component libraries.",
       },
       {
         icon: "🚀",
-        text: "Engineered multithreaded RESTful APIs with Python and FastAPI, boosting backend server throughput by 60% for 100K+ daily data-heavy transactions.",
+        text: "Engineered multithreaded RESTful APIs with Python and FastAPI, boosting the backend server throughput by 60% for processing 100K+ daily data-heavy transactions.",
       },
       {
         icon: "📊",
-        text: "Designed robust database sharding strategies for 1M+ high-volume transactions, enabling highly scalable bulk processing.",
+        text: "Designed robust database sharding strategies for 1M+ high-volume transactions, enabling scalable bulk processing.",
       },
       {
         icon: "🔧",
-        text: "Automated CI/CD pipelines using Bitbucket, Docker, and Azure virtual machines — reduced deployment latency by 60%.",
+        text: "Streamlined the software development lifecycle by automating CI/CD pipelines using Bitbucket, Docker, and Azure virtual machines, reducing deployment latency by 60%.",
       },
       {
         icon: "🗄️",
-        text: "Optimized complex SQL execution plans and introduced strategic indexing, drastically accelerating KPI dashboard query performance.",
-      },
-      {
-        icon: "🏗️",
-        text: "Refactored monolithic Laravel/Lumen controllers into reusable service layers — reduced codebase complexity by 50%, enabling future enterprise scaling.",
-      },
-      {
-        icon: "🔐",
-        text: "Built hierarchical workflow systems with custom Role-Based Access Control (RBAC), reducing manual operational errors in auditing and case management.",
+        text: "Optimized complex SQL execution plans and introduced strategic indexing mechanisms, accelerating database query performance for KPI dashboards.",
       },
       {
         icon: "👥",
@@ -53,9 +73,37 @@ const experiences = [
       { label: "UI Load Time", value: "−30%" },
       { label: "Backend Throughput", value: "+60%" },
       { label: "Deploy Latency", value: "−60%" },
-      { label: "Code Complexity", value: "−50%" },
+      { label: "Data Scale", value: "1M+" },
     ],
-    stack: ["React", "Next.js", "FastAPI", "Python", "Docker", "Azure", "PostgreSQL", "MySQL", "Bitbucket", "PHP", "Laravel"],
+    stack: ["React", "Redux", "FastAPI", "Python", "Microservices", "Docker", "Azure VMs", "Bitbucket", "SQL Optimization", "Database Sharding"],
+  },
+  {
+    role: "Solution Trainee",
+    company: "Whirldata Inc",
+    period: "Feb 2024 – Dec 2024",
+    location: "Chennai, India",
+    type: "Internship",
+    achievements: [
+      {
+        icon: "🏗️",
+        text: "Refactored monolithic Laravel and Lumen controllers into reusable and decoupled service layers, reducing codebase complexity by 50% and establishing a highly maintainable foundation for future enterprise scaling.",
+      },
+      {
+        icon: "🔐",
+        text: "Built comprehensive hierarchical workflow systems that feature custom Role-Based Access Control (RBAC), directly reducing manual operational errors in auditing and case management modules.",
+      },
+      {
+        icon: "💰",
+        text: "Migrated UI from Syncfusion (paid) to Rsuite and Recharts (open source), reducing licensing costs by 40% while maintaining feature parity.",
+      },
+    ],
+    metrics: [
+      { label: "Code Complexity", value: "−50%" },
+      { label: "Licensing Cost", value: "−40%" },
+      { label: "Access Control", value: "Custom RBAC" },
+      { label: "Feature Parity", value: "100%" },
+    ],
+    stack: ["Laravel", "Lumen", "PHP", "RBAC", "Rsuite", "Recharts", "Syncfusion Migration", "RESTful APIs"],
   },
 ];
 
